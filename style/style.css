@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::after {
+  content: " ";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: rgba(4, 0, 255, 0.246);
+  filter: blur(120px);
+  left: 290px;
+  right: 0px;
+  top: 290px;
+  z-index: -1;
+}
+
+.card::before {
+  content: " ";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: rgba(4, 0, 255, 0.246);
+  filter: blur(120px);
+  left: -200px;
+  right: 0px;
+  top: -100px;
+  z-index: -1;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  gap: 23px;
+  border-radius: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.144);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-heading {
+  font-size: 26px;
+  text-align: center;
+  line-height: 30.47px;
+}
+
+.card-para {
+  font-size: 14px;
+  line-height: 18.4px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  gap: 13px;
+  font-size: 14px;
+}
+.forms input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #CED4DA;
+  border-radius: 6px;
+}
+
+.industry-box {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #CED4DA;
+  border-radius: 6px;
+}
+
+.companysize {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.companysize .btn {
+  padding: 5px;
+  border: none;
+}
+.companysize .btn:hover {
+  background-color: #3766e8;
+  color: white;
+}
+
+.btn-start {
+  background-color: #3766e8;
+  color: white;
+  font-weight: bold;
+}
+
+.blues {
+  background-color: #3766e8;
+  color: white;
+}
+
+.symbols {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    overflow-x: none;
+  }
+
+  .card-body {
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
